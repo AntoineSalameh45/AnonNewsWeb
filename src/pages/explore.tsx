@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch } from "../store";
 import { getNews } from "../store/news/newsSlice";
-import AppHeader from "../components/AppHeader";
-import NavBar from "../components/NavBar";
+import AppHeader from "../components/Organisms/AppHeader";
+import NavBar from "../components/Organisms/NavBar";
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 

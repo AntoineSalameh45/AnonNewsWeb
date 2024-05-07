@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { iWeatherData } from "../pages/weather";
+import { iWeatherData } from "../../pages/weather";
 
 export interface iWeatherProps {
     cities: string[];

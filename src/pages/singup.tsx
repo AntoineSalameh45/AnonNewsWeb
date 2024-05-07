@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
-import AppHeader from "../components/AppHeader";
-import SignupForm from "../components/SignupForm";
+import AppHeader from "../components/Organisms/AppHeader";
+import SignupForm from "../components/Molecules/SignupForm";
 import { AppDispatch } from "../store";
 import { signup } from "../store/user/userSlice";
 

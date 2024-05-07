@@ -105,13 +105,13 @@ const userAuthSlice = createSlice({
             state.error = false;
           })
           .addCase(signup.fulfilled, (state, action: any) => {
-            const date = new Date();
-            date.setTime(date.getTime() + 30 * 60 * 1000);
-            document.cookie = `accessToken=${action.payload.accessToken};expires=${date.toUTCString()};path=/`;
+            const now = new Date();
+            now.setTime(now.getTime() + 30 * 60 * 1000);
+            document.cookie = `accessToken=${action.payload.accessToken};expires=${now.toUTCString()};path=/`;
             
-            const date2 = new Date();
-            date2.setTime(date2.getTime() + 30 * 24 * 60 * 60 * 1000);
-            document.cookie = `refreshToken=${action.payload.refreshToken};expires=${date2.toUTCString()};path=/`;
+            const exp = new Date();
+            exp.setTime(exp.getTime() + 30 * 24 * 60 * 60 * 1000);
+            document.cookie = `refreshToken=${action.payload.refreshToken};expires=${exp.toUTCString()};path=/`;
 
             state.accessToken = action.payload.accessToken;
             state.refreshToken = action.payload.refreshToken;
@@ -132,9 +132,9 @@ const userAuthSlice = createSlice({
             date.setTime(date.getTime() + 30 * 60 * 1000);
             document.cookie = `accessToken=${action.payload.accessToken};expires=${date.toUTCString()};path=/`;
 
-            const date2 = new Date();
-            date2.setTime(date2.getTime() + 30 * 24 * 60 * 60 * 1000);
-            document.cookie = `refreshToken=${action.payload.refreshToken};expires=${date2.toUTCString()};path=/`;
+            const exp = new Date();
+            exp.setTime(exp.getTime() + 30 * 24 * 60 * 60 * 1000);
+            document.cookie = `refreshToken=${action.payload.refreshToken};expires=${exp.toUTCString()};path=/`;
 
             state.accessToken = action.payload.accessToken;
             state.loading = false
@@ -149,13 +149,13 @@ const userAuthSlice = createSlice({
             state.error = false;
           })
           .addCase(refreshToken.fulfilled, (state, action: any) => {
-            const date = new Date();
-            date.setTime(date.getTime() + 5 * 60 * 1000);
-            document.cookie = `accessToken=${action.payload.accessToken};expires=${date.toUTCString()};path=/`;
+            const now = new Date();
+            now.setTime(now.getTime() + 5 * 60 * 1000);
+            document.cookie = `accessToken=${action.payload.accessToken};expires=${now.toUTCString()};path=/`;
 
-            const date2 = new Date();
-            date2.setTime(date2.getTime() + 30 * 24 * 60 * 60 * 1000);
-            document.cookie = `refreshToken=${action.payload.refreshToken};expires=${date2.toUTCString()};path=/`;
+            const exp = new Date();
+            exp.setTime(exp.getTime() + 30 * 24 * 60 * 60 * 1000);
+            document.cookie = `refreshToken=${action.payload.refreshToken};expires=${exp.toUTCString()};path=/`;
 
             state.accessToken = action.payload.accessToken;
             state.loading = false

@@ -12,7 +12,7 @@ const signupApi = async (
   })
   
       if (response.status === 400) {
-        throw new Error('Email already exists. Use the login screen!');
+        throw new Error('Email already exists');
       } else if(response.status === 500) {
         throw new Error('Network response was not ok');
       }

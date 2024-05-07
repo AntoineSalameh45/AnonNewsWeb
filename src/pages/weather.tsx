@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-import AppHeader from "../components/AppHeader";
-import NavBar from "../components/NavBar";
-import BigCityWeather from '../components/BigCityWeather';
+import AppHeader from "../components/Organisms/AppHeader";
+import NavBar from "../components/Organisms/NavBar";
+import BigCityWeather from '../components/Molecules/BigCityWeather';
 
 export interface iWeatherData {
     location: {

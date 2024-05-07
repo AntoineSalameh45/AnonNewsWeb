@@ -1,5 +1,5 @@
-import AppHeader from "../components/AppHeader";
-import LoginForm from "../components/LoginForm";
+import AppHeader from "../components/Organisms/AppHeader";
+import LoginForm from "../components/Molecules/LoginForm";
 import { login } from "../store/user/userSlice";
 import { AppDispatch } from "../store";
 import { useDispatch } from "react-redux";

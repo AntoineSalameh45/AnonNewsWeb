@@ -1,5 +1,5 @@
-import LogoutButton from "./LogoutButton";
-import TodayDate from "./TodayDate";
+import LogoutButton from "../Atoms/LogoutButton";
+import TodayDate from "../Atoms/TodayDate";
 
 const AppHeader = () => {
   

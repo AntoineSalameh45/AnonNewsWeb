@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import AppHeader from '../components/AppHeader';
-import NavBar from '../components/NavBar';
+import AppHeader from '../components/Organisms/AppHeader';
+import NavBar from '../components/Organisms/NavBar';
 import fetchFinanceNews from '../utils/fetchFinanceNews';
 
 const FinanceNewsPage = () => {

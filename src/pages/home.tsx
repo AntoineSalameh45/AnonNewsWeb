@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import AppHeader from '../components/AppHeader';
-import BreakingNews from '../components/BreakingNews';
-import NavBar from '../components/NavBar';
+import AppHeader from '../components/Organisms/AppHeader';
+import BreakingNews from '../components/Organisms/BreakingNews';
+import NavBar from '../components/Organisms/NavBar';
 import { useDispatch, useSelector } from 'react-redux';
 import { AppDispatch } from '../store';
 import { getNews } from '../store/news/newsSlice';
@@ -56,7 +56,7 @@ const Home = () => {
                   <p className="text-[#950101] text-[16px]">more news</p>
                 </div>
                 <div className="flex items-center justify-center">
-                  <img src="src/assets/ExploreSvg.svg" alt="SVG Icon" className="w-12 h-12 ml-2" />
+                  <img src="src/assets/svg/ExploreSvg.svg" alt="SVG Icon" className="w-12 h-12 ml-2" />
                 </div>
               </div>
               <div className="absolute inset-0 bg-black opacity-50 rounded-bl-[16px]"></div>
