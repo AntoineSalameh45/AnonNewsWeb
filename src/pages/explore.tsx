@@ -60,7 +60,7 @@ const Explore = () => {
   return (
     <>
       <div className="bg-local min-h-[100vh] min-w-[100vw] bg-cover bg-center" style={{ backgroundImage: `url(${bgimg})` }}>
-        <AppHeader />
+        <AppHeader showLogoutButton={true} />
         <NavBar />
         <div className="bg-[#ccccccc4]">
           {news.length > 0 && (

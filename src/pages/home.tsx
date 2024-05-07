@@ -31,7 +31,7 @@ const Home = () => {
   return (
     <>
       <div className="bg-local min-h-[100vh] min-w-[100vw] bg-cover bg-center" style={{ backgroundImage: `url(${bgimg})` }}>
-        <AppHeader />
+        <AppHeader showLogoutButton={true} />
         <NavBar />
         <BreakingNews />
         <div className="px-2 md:flex md:flex-wrap md:justify-around">
@@ -49,7 +49,7 @@ const Home = () => {
           ))}
           <div className='relative w-full md:w-[40%] bg-[#E5E7EB] my-4 rounded-bl-[16px] h-[120px] md:h-[180px]'>
             <a href='/explore' className="block w-full h-full">
-              <img src='src/assets/bg/img4.jpg' className='absolute inset-0 w-full h-full object-cover rounded-bl-[16px]' alt="Background Image" />
+              <img src='src/assets/bg/img7.jpg' className='absolute inset-0 w-full h-full object-cover rounded-bl-[16px]' alt="Background Image" />
               <div className='absolute inset-0 flex flex-row justify-center items-center px-4 py-2'>
                 <div className="relative z-10 text-center">
                   <p className="text-[#950101] font-bold text-[24px]">Explore</p>

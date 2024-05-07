@@ -65,7 +65,7 @@ const Weather = () => {
                     style={{ backgroundImage: `url(${bgimg})`, zIndex: -1 }}
                 ></div>
                 <div className="relative z-10">
-                    <AppHeader />
+                    <AppHeader showLogoutButton={true} />
                     <NavBar />
                     <div>
                         {currentWeatherData ? (

@@ -31,7 +31,7 @@ const FinanceNewsPage = () => {
     return (
         <>
             <div className="bg-local min-h-[100vh] min-w-[100vw] bg-cover bg-center" style={{ backgroundImage: `url(${bgimg})` }}>
-                <AppHeader />
+                <AppHeader showLogoutButton={true} />
                 <NavBar />
                 <div className="container mx-auto px-4 py-8">
                     <h2 className="text-2xl font-bold mb-4">Latest News</h2>

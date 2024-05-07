@@ -17,7 +17,7 @@ const Landing = () => {
             className="bg-local h-[100vh] w-[100vw] bg-cover bg-center" 
             style={{ backgroundImage: `url(${bgimg})` }}
             >
-                <AppHeader />
+                <AppHeader showLogoutButton={false} />
                 <hr/>
                 <div className="bg-[#E5E7EB] m-4 rounded-xl">
                     <LoginForm handleLogin={handleLogin}/>
