@@ -9,7 +9,7 @@ const LogoutButton = () => {
   };
 
   return (
-    <button onClick={handleLogout}>Logout</button>
+    <button onClick={handleLogout} className='bg-[#950101] rounded p-1 absolute right-4'>Logout</button>
   );
 };
 
