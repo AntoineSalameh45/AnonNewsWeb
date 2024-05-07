@@ -1,0 +1,32 @@
+.breaking-news-text {
+  animation: marquee 7s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.spinner {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.25rem solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.horiz-reverse {
+  direction: rtl;
+}
+@media screen and (min-width: 768px) {
+  .red-shadow {
+    box-shadow: 0px -5px 10px rgba(255, 0, 0, 0.5);
+  }
+}
