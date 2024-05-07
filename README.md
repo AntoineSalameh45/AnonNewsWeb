@@ -1,30 +1,40 @@
-# React + TypeScript + Vite
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# AnonNewsWeb
 
-Currently, two official plugins are available:
+AnonNewsWeb is the web version of AnonNews, an innovative news application built for both web and mobile platforms. It utilizes React, TypeScript, and Vite to provide a seamless browsing experience for users.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Cross-Platform Compatibility:** AnonNewsWeb shares the same backend, store, and API as the mobile app, ensuring a consistent experience across devices.
+- **Explore Page:** Browse through paginated news articles and easily access the original article sources through provided links.
+- **Weather API Integration:** Fetches current weather data and a 3-day forecast using the user's IP address, as well as current weather in major cities.
+- **Finance News:** Stay updated with the latest finance-related news from around the world, available in multiple languages.
+- **Authentication:** Secure login and signup functionality using a provided API.
+- **Drawer Navigator:** Navigate through different screens effortlessly with the drawer navigator.
+- **Redux Store:** Manage news slices and login states efficiently using Redux.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone the repository: `git clone https://github.com/AntoineSalameh45/AnonNewsWeb.git`
+2. Navigate to the project directory: `cd AnonNewsWeb`
+3. Install dependencies: `npm install`
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Usage
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Start the development server: `npm run dev`
+2. Open the app in your web browser.
+
+## Mobile Version
+
+The mobile version of AnonNews is available in a separate repository. You can find it at [AnonNews Mobile](https://github.com/AntoineSalameh45/AnonNews.git).
+
+## Contributing
+
+Contributions are welcome! Feel free to submit bug reports, feature requests, or pull requests via GitHub issues.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
